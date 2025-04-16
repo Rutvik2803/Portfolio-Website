@@ -170,18 +170,6 @@
     font-weight: 300;
   }
   
-  /*.experience {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    gap: 6rem;
-  }
-  
-  .experience-content h2 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-  }*/
   .about-content ol {
     font-size: 2rem;
     font-weight: 300;
@@ -198,11 +186,13 @@
   .services-container {
     display: flex;
     gap: 5rem;
+    min-width: 200px;
+    min-height: 300px;
     justify-content: space-between;
     flex-direction: row; /* Default flex-direction */
   }
   .projects-box{
-    margin-left: 11%;
+    margin-left: 0%;
   }
   
   @media(max-width: 768px) {
@@ -274,6 +264,7 @@
     row-gap: 5rem;
     width: 100%;
     max-width: 1200px;
+    margin-left: 10%;
   }
   .project-card{
     display: flex;
@@ -484,6 +475,9 @@
       align-self: center; /* Center the submit button on smaller screens */
       margin-top: 2rem; /* Space above the submit button */
     }
+    .projects-box{
+      margin: 0%;
+    }
   }
   
   @media(max-width: 500px){
@@ -491,6 +485,7 @@
       font-size: 6rem;
     }
     #lottie{
+      margin-top: 12%;
       width: 20vw;
     }
     .home-content h3{
@@ -512,5 +507,8 @@
       align-items: center;
       justify-content: center;
       display: contents;
+    }
+    .projects-box{
+      margin-left: -2%;
     }
 }
